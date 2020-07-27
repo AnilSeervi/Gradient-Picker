@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Picker</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Pick a Gradient</h2>
+      <div class="inputs">
+        <label for="color1"
+          >Color 1
+          <input type="color" name="Color1" id="color1" value="#0f00f0" />
+        </label>
+        <label for="color2"
+          >Color 2
+          <input type="color" name="Color2" id="color2" value="#f00fff" />
+        </label>
+      </div>
+      <p class="prop">CSS Property:</p>
+      <p id="output">
+        background: linear-gradient(to-right,<span class="clr1">#0f00f0</span
+        >,<span class="clr2">#f00fff</span>);
+      </p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
